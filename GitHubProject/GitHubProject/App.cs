@@ -14,16 +14,13 @@ namespace GitHubProject
             // The root page of your application
             MainPage = new ContentPage
             {
-                Content = new StackLayout
+                Content = new Label()
                 {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
+                    Text = "Welcome to Xamarin.Forms!",
+                    TextColor=Color.Red,
+                    FontAttributes = FontAttributes.Bold                    
                 }
+                ,BackgroundColor = Color.Purple
             };
         }
 
